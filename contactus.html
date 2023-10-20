@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title>My Contact Page</title>
+  <!-- Add some style to the page -->
+  <style>
+    /* Style the container */
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    /* Style the heading */
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    /* Style the form */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Style the form inputs */
+    input, textarea {
+      width: 80%;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #333;
+    }
+
+    /* Style the submit button */
+    input[type=submit] {
+      width: 20%;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Create a container for the contact page -->
+  <div class="container">
+    <!-- Add a heading -->
+    <h1>Contact Us</h1>
+    <!-- Add a form -->
+    <form action="send.php" method="post">
+      <!-- Add a name input -->
+      <input type="text" name="name" placeholder="Your name" required>
+      <!-- Add an email input -->
+      <input type="email" name="email" placeholder="Your email" required>
+      <!-- Add a subject input -->
+      <input type="text" name="subject" placeholder="Your subject" required>
+      <!-- Add a message textarea -->
+      <textarea name="message" rows="10" cols="40" placeholder="Your message" required></textarea>
+      <!-- Add a submit button -->
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</body>
+</html>
